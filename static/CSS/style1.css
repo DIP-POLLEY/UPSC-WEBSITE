@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+
+}
+
+.sidebar {
+    font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #191647;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+section {
+    margin-left: 200px;
+    padding: 1px 16px;
+    
+  }
+.topbar
+{
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+}
+.topbar h1
+{
+  padding: 0.87%;
+}
+.content h1
+{
+  margin-top: 10vh;
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Merriweather', serif;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  .content h1
+{
+  
+  font-size: 2.5em;
+}
+  
+  .topbar{
+    /* display: none; */
+    position: relative;
+    width: auto;
+    margin-left: 0;
+    text-align: center;  
+    background-color: rgba(80, 80, 80,0.5);
+  }
+  .content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.content img
+{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+    height: 60vh;
+}
+
+@media screen and (max-width: 700px) {
+  .content img
+  {
+    width: 60vw;
+    height: 30vh;
+  }
+}
+
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 1vh;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: rgb(80, 80, 80);
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+    
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .instagram {
+    background: #e22727;
+    color: white;
+  }
+  
+  .content .abt p
+  {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 1.2em;
+  }
+  @media screen and (max-width: 700px)
+  {
+
+    .content .abt p
+    {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.1em;
+    }
+  }
+
+
+
+.dez
+  {
+    margin-top: 10vh;
+  }
+
+  .dez h1
+  {
+    float: right;
+    font-size: 2.5em;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    
+  }
+ .line 
+  {
+
+    height: 0.3vh;
+    background-color: black;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  .lst
+  {
+    margin-top: 2vh;
+    margin-left: 20vw;
+    margin-right: 15vw;
+    font-size: 1.2em;
+  }
+
+.desc
+{
+  margin-top: 5vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-size: 1.2em;
+}
+
+.dez h3
+{
+  margin-top: 3vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-size: 1.5em;
+}
+.lst img
+{
+  height: 50vh;
+  margin-bottom: 10vh;
+}
+
+
+
+  @media screen and (max-width: 700px)
+  {
+    .dez h1
+    {
+      float: left;
+      font-size: 2.5em;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      
+    }
+    .line 
+  {
+    height: 0.1vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+   .dez
+   {
+     margin-left: 0;
+   }
+   .desc
+  {
+  margin-top: 3vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 1.1em;
+
+  }
+  .lst
+  {
+    margin-top: 3vh;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    font-size: 1.1em;
+  }
+  .lst img
+  {
+    width: 40vh;
+    height: 30vh;
+  } 
+  }
+
+
+
+
+
+
+
+  footer {
+    margin-top: 10vh;
+    margin-left: 200px;
+    padding: 1px 16px;
+    background-color: #060422;
+  }
+  footer p
+  {
+    color: white;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    text-align: center;
+  }
+  @media screen and (max-width: 700px) {
+    footer{
+      margin-left: 0;
+    }
+  }
+  p
+  {
+    text-align: justify;
+  }

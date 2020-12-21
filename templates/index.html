@@ -1,0 +1,460 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>UPSC Prep</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pratiyush Kumar">
+    <meta name="description" content="My UPSC Jouney">
+    <meta name="keywords" content="Pratiyush,Pratiyush Kumar,UPSC, UPSC Journey, IAS, IES, IPS, Exam, India, Civil Services, Exam Pattern, UPSC Syllabus,upsc, upsc questions, upsc interview, Dipan Polley, Designed ">
+    <!-- Social media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'CSS/style1.css' %}">
+</head>
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="#">Home</a>
+        <a href="#GS1">GS1</a>
+        <a href="#GS2">GS2</a>
+        <a href="#GS3">GS3</a>
+        <a href="#GS4">GS4</a>
+        <a href="#Essay">Essay</a>
+        <a href="#Sociology">Sociology (Optional)</a>
+        <a href="#practice">Practice</a>
+    </div>
+
+<section class="topbar">
+  <h1>Pratiyush Kumar</h1>
+</section>
+<section class="content">
+  <h1>UPSC Preparations</h1>
+  <center><img src="{% static 'images/upsc.png' %}"></center>
+ 
+  <div class="icon-bar">
+    <a href="https://m.facebook.com/pratiyush.kumar.144?ref=bookmarks"   target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+    <a href="https://www.instagram.com/pratiyush2607/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+    <a href="https://www.linkedin.com/in/pratiyush-kumar-462a0913a " target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    
+  </div>
+
+  <div class="abt">
+    <p><i>“Find the fire in you to make it work”.</i> It is important to find that one reason why you want to crack the examination. “It’s that desire that will see you through the tough times. Whether it is to study for 10 or 4 hours a day, it is essential that we as  aspirants draw up a schedule for ourselves before  starting  the preparations. It not only brings in discipline but also a great degree of commitment to the preparation. It also helps curb the harmful habit of biting off more than you can chew. So setting a time table is mandatory to help us stagger our climb uphill. To wait until you complete the entire syllabus and then practise might not be the best strategy. It is important to prepare and practise simultaneously.</p>
+    <p>The key to cracking this examination lies in practice. I would recommend all aspirants to practise writing answers on a daily basis. There has been an exponential growth in e-learning tools and one should make use of these. The biggest advantage of these online tools is that you access them from anywhere. However, one must exercise caution while trawling the internet. Time is of the utmost importance during the CSE preparation. So once you find what you are looking for – a website that you find useful – then stick to it. Do not go hunting for new avenues every day and waste your time. One thing I learnt and tried to follow was to make concise notes. Notes are effective only when you are able to fit it all into 2 or 3 pages, at most. Making bulky notes will not serve the purpose during revisions.</p>
+    <p><b><i>“Revising is as important as preparing, and therefore make notes that will hold you in good stead,”</i></b> says Dhivya IAS batch-2015.</p>
+  </div>
+  
+</section>
+
+
+<section class=dez id=GS1>
+  
+  <div><h1>GS1</h1></div>
+  <br><br><br>
+  <div class=line></div>
+  <div class=desc>
+    <p><b>Indian Heritage and Culture, History and Geography of the World and Society:</b>
+
+      Indian culture covers the salient features of Literature, Art Forms, and Architecture from ancient to modern times.
+      Modern Indian history include the significant events, personalities, issues during the middle of the eighteenth century until the present
+      Various stages and important contributors and contributions from different parts of the country in ‘The Freedom Struggle’</p>
+      <p><b>Consolidation and reorganization within the country: </b>
+        History of the world includes events, forms and effect on the society from 18th century like world wars, industrial revolution, colonization, redrawal of national boundaries, decolonization, political philosophies like communism, capitalism, socialism etc.</p>
+      <p>
+        <b>Salient aspects of Diversity of India and Indian Society: </b>
+        Role of women and women’s organization, population and associated issues, poverty and developmental issues, urbanization, their problems and remedies.
+      </p>
+      <p>
+        <b>Social empowerment, communalism, regionalism & secularism: </b>
+        Distribution of key natural resources across the world including South Asia and the Indian sub-continent; factors responsible for the location of primary, secondary, and tertiary sector industries in various parts of the world including India.
+      </p>
+      <p>
+        <b>Effects of globalization on Indian society: </b>
+        Important Geophysical phenomena such as earthquakes, Tsunami, Volcanic activity, cyclone etc., geographical features and their location- changes in critical geographical features (including water-bodies and ice-caps) and in flora and fauna and the effects of such changes
+        Salient features of world’s physical geography.
+      </p>
+    </div>
+  <h3>Static</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj3%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  <h3>Current</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj4%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  
+</section>
+<section class=dez id=GS2>
+  
+  <div><h1>GS2</h1></div>
+  <br><br><br>
+  <div class=line></div>
+  <div class=desc>
+    <p>
+      <b>Governance, Constitution, Polity, Social Justice and International relations:</b>
+
+<p>Indian Constitution- historical underpinnings, evolution, features, amendments, significant provisions and basic structure.</p>
+<p>Functions and responsibilities of the Union and the States, issues and challenges pertaining to the federal structure, devolution of powers and finances up to local levels and challenges therein.</p>
+<p>Comparison of the Indian constitutional scheme with that of other countries.</p>
+<p>Separation of powers between various organs dispute redressal mechanisms and institutions.</p>
+<p>Parliament and State Legislatures – structure, functioning, conduct of business, powers & privileges and issues arising out of these.</p>
+<p>Appointment to various Constitutional posts, powers, functions and responsibilities of various Constitutional Bodies.</p>
+<p>Structure, organization and functioning of the Executive and the Judiciary Ministries and Departments of the Government; pressure groups and formal/informal associations and their role in the Polity.</p>
+<p>Salient features of the Representation of People’s Act.</p>
+<p>Government policies and interventions for development in various sectors and issues arising out of their design and implementation.</p>
+<p>Statutory, regulatory and various quasi-judicial bodies.</p>
+<p>Welfare schemes for vulnerable sections of the population by the Centre and States and the performance of these schemes; mechanisms, laws, institutions and Bodies constituted for the protection and betterment of these vulnerable sections.</p>
+<p>Development processes and the development industry the role of NGOs, SHGs, various groups and associations, donors, charities, institutional and other stakeholders.</p>
+<p>Issues relating to development and management of Social Sector/Services relating to Health, Education, Human Resources.</p>
+<p>Important aspects of governance, transparency and accountability, e-governance- applications, models, successes, limitations, and potential; citizens charters, transparency & accountability and institutional and other measures.</p>
+<p>Issues relating to poverty and hunger.</p>
+<p>Role of civil services in a democracy.</p>
+<p>Bilateral, regional and global groupings and agreements involving India and/or affecting India’s interests.</p>
+<p>India and its neighborhood- relations.</p>
+<p>Important International institutions, agencies and fora, their structure, mandate.</p>
+<p>Effect of policies and politics of developed and developing countries on India’s interests, Indian diaspora.</p>
+   
+  </div>
+  <h3>Static</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj5%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  <h3>Current</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj6%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:-<br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  
+</section>
+<section class=dez id=GS3>
+  
+  <div><h1>GS3</h1></div>
+  <br><br><br>
+  <div class=line></div>
+  <div class=desc>
+    <p>
+      <b>Technology, Economic Development, Bio-diversity, Environment, Security and Disaster Management:</b></p>
+
+<p>Indian Economy and issues relating to planning, mobilization of resources, growth, development and employment.</p>
+<p>Development, Bio diversity, Environment, Security and Disaster Management.</p>
+<p>Government Budgeting.</p>
+<p>Inclusive growth and issues arising from it.</p>
+<p>Major crops cropping patterns in various parts of the country, different types of irrigation and irrigation systems storage, transport and marketing of agricultural produce and issues and related constraints; e-technology in the aid of farmers.</p>
+<p>Economics of animal-rearing.</p>
+<p>Food processing and related industries in India- scope and significance, location, upstream and downstream requirements, supply chain management.</p>
+<p>Issues related to direct and indirect farm subsidies and minimum support prices; Public Distribution System objectives, functioning, limitations, revamping; issues of buffer stocks and food security; Technology missions.</p>
+<p>Land reforms in India.</p>
+<p>Effects of liberalization on the economy, changes in industrial policy and their effects on industrial growth.</p>
+<p>Infrastructure: Energy, Ports, Roads, Airports, Railways etc.</p>
+<p>Investment models.</p>
+<p>Science and Technology- developments and their applications and effects in everyday life Achievements of Indians in science & technology;</p>
+<p>Indigenization of technology and developing new technology.</p>
+<p>Conservation, environmental pollution and degradation, environmental impact assessment.</p>
+<p>Awareness in the fields of IT, Space, Computers, robotics, nano-technology, bio-technology and issues relating to intellectual property rights.</p>
+<p>Disaster and disaster management.</p>
+<p>Role of external state and non-state actors in creating challenges to internal security.</p>
+<p>Linkages between development and spread of extremism.</p>
+<p>Challenges to internal security through communication networks, role of media and social networking sites in internal security challenges, basics of cyber security; money-laundering and its prevention.</p>
+<p>Various Security forces and agencies and their mandate.</p>
+<p>Security challenges and their management in border areas; linkages of organized crime with terrorism.</p>
+    
+  </div>
+  <h3>Static</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj7%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  <h3>Current</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj8%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  
+</section>
+<section class=dez id=GS4>
+  
+  <div><h1>GS4</h1></div>
+  <br><br><br>
+  <div class=line></div>
+  <div class=desc>
+    <p>
+      <b>Ethics, Integrity and Aptitude:</b> This paper includes questions to check the candidate’s attitude and approach to issues relating to integrity, probity in public life and his/her problem solving approach to various issues and conflicts faced by him/her while dealing with society. Questions may utilise the case study approach to determine these aspects and covers area:</p>
+
+      <p><b>Ethics and Human Interface-</b> Essence, determinants and consequences of Ethics in human actions; dimensions of ethics; ethics in private and public relationships.</p>
+      <p><b>Human Values-</b> Lessons from the lives and teachings of great leaders, reformers and administrators; role of family, society and educational institutions in inculcating values.</p>
+      <p><b>Attitude-</b> Content, structure, function; its influence and relation with thought and behaviour; moral and political attitudes; social influence and persuasion.</p>
+      <p>Aptitude and foundational values for Civil Service, integrity, impartiality and non-partisanship, objectivity, dedication to public service, empathy, tolerance and compassion towards the weaker-sections.</p>
+      <p><b>Emotional intelligence-</b>Concepts, and their utilities and application in administration and governance.</p>
+      <p>Contributions of moral thinkers and philosophers from India and world.</p>
+      <p><b>Public/Civil service values and Ethics in Public administration-</b> Status and problems; ethical concerns and dilemmas in government and private institutions; laws, rules, regulations and conscience as sources of ethical guidance; accountability and ethical governance; strengthening of ethical and moral values in governance; ethical issues in international relations and funding; corporate governance.</p>
+      <p><b>Probity in Governance-</b> Concept of public service; Philosophical basis of governance and probity; Information; sharing and transparency in government, Right to Information, Codes of Ethics, Codes of Conduct, Citizen’s Charters, Work culture, Quality of service delivery, Utilization of public funds, challenges of corruption.</p>
+      <p>Case Studies on above issues</p>
+    
+  </div>
+  <h3>Static</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj9%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  <h3>Current</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj10%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  
+</section>
+<section class=dez id=Essay>
+  
+  <div><h1>Essay</h1></div>
+  <br><br><br>
+  <div class=line></div>
+  <div class=desc>
+    <p>
+      The essay paper is an important aspect of the UPSC civil services exams. It can make or break your outcome. There are two sections in this paper. Each section gives you four topics out of which you have to choose one topic each. Each essay you write is marked out of 125 making a total of 250 marks. 
+    </p>
+    <p>
+      While you don’t have to study separate content for the civil services essay paper, for your general studies preparation is enough to cover possible topics, you do have to remember certain aspects of writing a good essay if you want to have an edge over your fellow UPSC aspirants. A lot of IAS aspirants make the mistake of not focusing on the essay paper because of its general nature. However, there are many <b>advantages</b> of concentrating on this paper such as:
+    </p>
+    <br>
+    <p>• You have the option of selecting one topic out of four. You should be able to leverage this to your advantage and shine in this paper.</p>
+    <p>• The essay paper is an area where you can let loose your creativity while displaying your knowledge about the topics.</p>
+    <p>• Also, you have three hours to write about 1000 to 1200 words per topic (word limit for essay in UPSC exam). Hence, you can do justice to the essay topic as you have ample time to structure your thoughts and then start writing.</p>
+    <br>
+    <p><b>Let us look at how your essay should be structured!</b></p>
+
+    <p>
+      Your essay should ideally have an introduction, content, basic theme and conclusion. The introduction and conclusion are self-explanatory. Content should give a historical perspective to your topic. It should also include facts and events related to your topic. Try to cover relevant aspects of the topic. The basic theme should talk about your views on the topic. Take a stand but a balanced one. You should also describe the negative and positive aspects of the topic chosen.
+    </p>
+    <br>
+    <p><b>How to select the UPSC essay topic</b></p>
+  
+    
+    <p>• Go through all the given topics well.</p>
+    <p>• Choose a topic that you are most aware of and have significant knowledge about.</p>
+    <p>• Try to avoid provocative issues where personal opinions can be controversial.</p>
+    <p>• Select the topic only if you are sure of the meaning. For example, know what IT refers to in a given case – information technology or income tax.</p>
+    <p>• Don’t necessarily pick a topic because it excites you. You should have content and a balanced approach while writing about it.</p>
+    <br>
+
+    <p><b>Features of a good essay</b></p>
+    <p>• It should resonate with the topic given. Don’t stray from the topic merely to fill up the word count.</p>
+    <p>• It should engross the reader. A good essay should ignite the reader’s curiosity about the topic. It should not be boring. The reader should feel like going on reading it.</p>
+    <p>• It should be multi-dimensional. Don’t have a single viewpoint. Analyse the topic from different perspectives. You can provide new insights into the topic and impress the examiner.</p>
+    <p>• It should be simple but effective and coherent. You need not write the Queen’s English but let the language drive home whatever point you are trying to make.</p>
+    <p>• It should be grammatically perfect. Not only does it enhances your essay’s clarity it also avoids a negative impression.</p>
+    <p>• It should be neat. This is why it is important to first think about what you want to write before you start. Clearly picture in your head the order of things you want to write in your essay. This avoids scratching.</p>
+    <p>• There should be continuity in your essay. Don’t jump from one point to another. Make your shifts seamless and smooth. Let there be a natural flow of points. This indicates clarity of thoughts.</p>
+    <p>• It should contain quotes, headings, sub-headings and diagrams if required.</p>
+    <p>• It should be structured appropriately.</p>
+
+    <br>
+
+    <p><b>Things to avoid in a UPSC essay paper</b></p>
+    <p>• Avoid writing in the first person.</p>
+    <p>• Avoid being too aggressive in your writing. You want to portray an image of a composed person with balanced views. Aggressiveness can also show inflexibility.</p>
+    <p>• Avoid being pessimistic in your writing. UPSC  wants officers with a cheerful and positive disposition!</p>
+    <p>• Avoid writing in points. Remember you are writing an essay.</p>
+    <p>• You don’t have to agree with the stand taken by the question. Sometimes, a question can be a statement giving a particular view. You can write both negative and positive aspects of it.</p>
+    <p>• Don’t stray away from the topic.</p>
+    <p>• Don’t get too personal and name politicians or political parties unnecessarily. You are going to be a bureaucrat, not a politician or journalist!</p>
+    <p>• Avoid giving quotes that you are not sure of. Don’t attribute quotes to the wrong people. And, definitely do not makeup quotes. You can’t fool the examiner. Doing so will certainly get you penalised.</p>
+    <br>
+    <p>You can write good essays if you develop the habit of reading good UPSC essays on a regular basis. Incorporate reading essays as a part of your UPSC civil services preparation. Remember, practice makes perfect!</p>
+
+  </div>
+  <!-- <h3>Static</h3> -->
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj11%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  <!-- <h3>Current</h3>
+  <div class=lst>
+    <ul>
+      <li>Content 1:- <a href="#">Click Here</a></li>
+      <li>Content 2:- <a href="#">Click Here</a></li>
+      <li>Content 3:- <a href="#">Click Here</a></li>
+    </ul>
+  </div> -->
+  
+</section>
+<section class=dez id="Sociology">
+  
+  <div><h1 style="font-size: 2em;">Sociology</h1></div>
+  <br><br><br>
+  <div class=line></div>
+  <div class=desc>
+    <p></p>
+  </div>
+  <h3>Static</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj12%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  <h3>Current</h3>
+  <div class=lst>
+    <ul>
+      
+        {% for i in obj13%}
+        {% if i.check_if_image %}
+        <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+        {% endif %}
+        {% if i.check_if_pdf %}
+        <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+        {% endif %}
+        {% endfor %}
+      
+    </ul>
+  </div>
+  
+</section>
+
+
+<section class=dez id=practice>
+  
+  <div><h1>Practice</h1></div>
+  <br><br><br>
+  <div class=line></div>
+  <div class=desc>
+    <p></p>
+  </div>
+  <h3>Static</h3>
+  <div class=lst>
+    <ul>
+      {% for i in obj%}
+      {% if i.check_if_image %}
+      <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+      {% endif %}
+      {% if i.check_if_pdf %}
+      <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <h3>Current</h3>
+  <div class=lst>
+    <ul>
+      {% for i in obj2%}
+      {% if i.check_if_image %}
+      <li>{{i.topic_name}}:- <br><br><img src="{{i.File.url}}"></li><br><br>
+      {% endif %}
+      {% if i.check_if_pdf %}
+      <li>{{i.topic_name}}:- <br><br><a href="{{i.File.url}}" target="_blank">Click Here</a></li><br><br>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  
+</section>
+
+
+
+<footer>
+  <!-- <p>Copyright &copy; 2020. All Rights Reserved. Designed by Dipan Polley.</p> -->
+</footer>
+</body>
+</html>
